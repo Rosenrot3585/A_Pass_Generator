@@ -20,7 +20,7 @@ html{
 
 body {
     background-color:whitesmoke;
-    background-image: url(../multimedia/hacker.jpg);
+    background-image: url(../multimedia/hacker1.webp);
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
@@ -114,26 +114,27 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
 }
 
 .validChars{
-    border: solid 1px black;
+    border: solid 2px black;
     padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     width: 100%;
-
+    margin-bottom: 1em;
 }
 
 
 .validChars--left div, .validChars--right div{
     display:flex;
     flex-direction: row;
+    margin: 5px;
 }
 .onOff{
     position:relative;
     display: inline-block;
-    width: 40px;
-    height: 20px;
-    margin: 5px;
+    width: 36px;
+    height: 18px;
+    margin-right: 5px;
 
 }
 .validChars--input{
@@ -144,10 +145,10 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
 }
 
 .validChars--input:checked + .switch{
-    background-color: #80acaa;
+    background-color: blue;
 }
 .validChars--input:focus + .switch{
-    box-shadow: 0 0 1px #0abdc6;
+    box-shadow: 0 0 1px blue;
 }
 .switch{
     position: absolute;
@@ -156,7 +157,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #fdd97882;
+    background-color: grey;
     transition: .4s;
     border-radius: 34px
 }
@@ -164,18 +165,18 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     position: absolute;
     border-radius: 50%;
     content: "";
-    height: 15px;
-    width: 15px;
-    top: 2px;
-    bottom: 2px;
-    left: 4px;
-    right: 4px;
-    background-color: #6e2f3b;
+    height: 17px;
+    width: 17px;
+    background-color: whitesmoke;
     transition: .4s;
 }
 
 .validChars--input:checked + .switch::before{
     transform: translateX(18px);
+}
+#buttons{
+    display: flex;
+    justify-content: center;
 }
 #generate, #copyButton{
     background-image: radial-gradient(#01b93e 20%, #01aa39);
@@ -208,18 +209,16 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     -moz-box-shadow:0 0 0 grey;
     -webkit-box-shadow:0 0 0 grey;
     cursor: not-allowed;
-
 }
 #passRequirements{
     width: 65%;
 }
 #error-message{
-    color: rgb(230, 147, 3); 
+    color: red; 
     font-weight: bold;
     width: 100%;
     font-size: 14px;
     display: none;
-    background-color: rgba(0, 0, 0, 0.853);
 }
 #passResult{
     width: 35%;
@@ -339,17 +338,83 @@ footer {
     50% { border-color: cyan; }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(../multimedia/Hackerportrait.jpg);
+        background-size: cover;
+    }
     .main {
         flex-direction: column;
         align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    #blur{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    h3{
+        font-size: 16px;
+        width: 100%;
+    }
+    form{
+        width: 100%;
     }
     
     section {
-        width: 90%;
+        width: 100%;
+        font-size: 12px;
     }
-
+    h1{
+        font-size: 24px;
+    }
+.validChars{
+    align-self: normal;
+    display: inline;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+#generate, #copyButton{
+    font-size: 14px;
+    width: 150px;
+    height: 35px;
+    -moz-box-shadow: 0px 6px 0 #00802b;
+    -webkit-box-shadow: 0px 6px 0 #00802b;
+    text-align: center;
+    margin: 1em;
+    cursor: pointer;
+}
+#passRequirements{
+    width: 100%;
+}
     #passResult {
         width: 100%;
+        height: auto;
+        font-size: 12px;
+    }
+    header {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 1em;
+    }
+    #cagePass{
+        height: auto;
+        margin-bottom: 1em;
+        font-size: 16px;
+        overflow: auto;
+    }
+    footer{
+        height: auto;
+        align-items: center;
+        position: relative;
+        font-size: 14px;
+    }
+    .siguenos{
+        width: auto;
     }
 }
