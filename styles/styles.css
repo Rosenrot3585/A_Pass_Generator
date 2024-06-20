@@ -20,7 +20,7 @@ html{
 
 body {
     background-color:whitesmoke;
-    background-image: url(../multimedia/hacker1.webp);
+    background-image: url(../multimedia/blueCon.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
@@ -340,8 +340,10 @@ footer {
 
 @media screen and (max-width: 768px) {
     body{
-        background-image: url(../multimedia/Hackerportrait.jpg);
+        background-image: url(../multimedia/blueConPor.jpg);
         background-size: cover;
+        
+        
     }
     .main {
         flex-direction: column;
@@ -354,6 +356,8 @@ footer {
         width: 100%;
         height: 100%;
         border-radius: 0;
+        backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     }
     h3{
         font-size: 16px;
@@ -406,7 +410,7 @@ footer {
     #cagePass{
         height: auto;
         margin-bottom: 1em;
-        font-size: 14px;
+        font-size: 12px;
         overflow: auto;
     }
     footer{
