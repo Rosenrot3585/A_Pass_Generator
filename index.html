@@ -5,152 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="GENERADOR DE CONTRASEÑAS, CONTRASEÑA, PASSWORD, GENERATOR, PASS">
-    <meta name="description" content="Crea contraseñas de manera rápida y sencilla">
+    <meta name="keywords"
+        content="generador de contraseñas, contraseña segura, password generator, crear contraseña, seguridad en línea">
+    <meta name="description"
+        content="Crea contraseñas seguras de manera rápida y sencilla con nuestro generador gratuito. Personaliza la longitud y los caracteres incluidos.">
     <title>Generador de Contraseñas</title>
     <link rel="icon" href="multimedia/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">   
-<script src="https://kit.fontawesome.com/a96cd32ad9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a96cd32ad9.js" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "name": "Generador de Contraseñas Seguras",
+      "description": "Crea contraseñas seguras y rápidas con nuestro generador gratuito. Personaliza la longitud y los caracteres incluidos.",
+      "url": "https://www.tusitio.com/generador-de-contrasenas"
+    }
+    </script>
 </head>
 
 <body>
     <div class="wrapper">
         <div id="blur">
-        <header>
-            <h1>Generador de Contraseñas</h1>
-        </header>
-        <div class="main">
-            <section id="passRequirements">
-                <form method="get">
-                    <h3 class="formDirections">Complete los campos a continuación y luego haga click en el botón
-                        "Generar".
-                    </h3>
-                    <div class="rangeChars">
-                        <label for="maxDigits">Longitud (1-30) </label>
-                        <input class="rangeChars--input" type="number" list="numbers" id="maxDigits" name="maxDigits"
-                            placeholder="30" required="yes">
-                        
-                    </div>
-                    <div class="qtyPass">
-                        <label for="cantPasswords">Cantidad (1-30) </label>
-                        <input class="qtyPass--input" type="number" list="numbers" id="cantPasswords"
-                            name="cantPasswords" required="yes" placeholder="1">
-                        
-                    </div>
-                    <datalist id="numbers">
-                        <option value=1></option>
-                        <option value=2></option>
-                        <option value=3></option>
-                        <option value=4></option>
-                        <option value=5></option>
-                        <option value=6></option>
-                        <option value=7></option>
-                        <option value=8></option>
-                        <option value=9></option>
-                        <option value=10></option>
-                        <option value=11></option>
-                        <option value=12></option>
-                        <option value=13></option>
-                        <option value=14></option>
-                        <option value=15></option>
-                        <option value=17></option>
-                        <option value=18></option>
-                        <option value=19></option>
-                        <option value=20></option>
-                        <option value=21></option>
-                        <option value=22></option>
-                        <option value=23></option>
-                        <option value=24></option>
-                        <option value=25></option>
-                        <option value=26></option>
-                        <option value=27></option>
-                        <option value=28></option>
-                        <option value=29></option>
-                        <option value=30></option>
-                        <option value=16></option>
-                    </datalist>
+            <header>
+                <h1>Generador de Contraseñas</h1>
+            </header>
+            <div class="main">
+                <section id="passRequirements">
+                    <form method="get">
+                        <h2 class="formDirections">Complete los campos a continuación y luego haga click en el botón
+                            "Generar".
+                        </h2>
+                        <h3>Elija la longitud de la contraseña y cuántas contraseñas desea generar simultáneamente</h3>
+                        <div class="rangeChars">
+                            <label for="maxDigits">Longitud (1-30) </label>
+                            <input class="rangeChars--input" type="number" title="Cantidad de caraacteres que tendrá la contraseña, sugerimos mínimo 10." list="numbers" id="maxDigits"
+                                name="maxDigits" placeholder="30" required="yes">
 
-                    <div class="advancedMode">
-                        <h3>Opciones avanzadas:</h3>
-                        <div class="validChars">
-                            <div class="validChars--left">
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="minusculas"
-                                            name="minusculas" title="minusculas" checked>
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="minusculas">Minúsculas</label>
-                                </div>
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="mayusculas"
-                                            name="mayusculas" title="mayusculas">
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="mayusculas">Mayúsculas</label>
-                                </div>
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="sinSucesiones"
-                                            name="sinSucesiones" title="sinSucesiones">
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="sinSucesiones">Sin sucesión (ej. "123" / "abc")</label>
-                                </div>
-                            </div>
-                            <div class="validChars--right">
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="numeros" name="numeros"
-                                            title="numeros">
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="numeros">Números</label>
+                        </div>
+                        <div class="qtyPass">
+                            <label for="cantPasswords">Cantidad (1-30) </label>
+                            <input class="qtyPass--input" type="number" title="Cantidad de contraseñas a generar." list="numbers" id="cantPasswords"
+                                name="cantPasswords" required="yes" placeholder="1">
 
+                        </div>
+                        <datalist id="numbers">
+                            <option value=1></option>
+                            <option value=2></option>
+                            <option value=3></option>
+                            <option value=4></option>
+                            <option value=5></option>
+                            <option value=6></option>
+                            <option value=7></option>
+                            <option value=8></option>
+                            <option value=9></option>
+                            <option value=10></option>
+                            <option value=11></option>
+                            <option value=12></option>
+                            <option value=13></option>
+                            <option value=14></option>
+                            <option value=15></option>
+                            <option value=17></option>
+                            <option value=18></option>
+                            <option value=19></option>
+                            <option value=20></option>
+                            <option value=21></option>
+                            <option value=22></option>
+                            <option value=23></option>
+                            <option value=24></option>
+                            <option value=25></option>
+                            <option value=26></option>
+                            <option value=27></option>
+                            <option value=28></option>
+                            <option value=29></option>
+                            <option value=30></option>
+                            <option value=16></option>
+                        </datalist>
+
+                        <div class="advancedMode">
+                            <h3>Opciones avanzadas:</h3>
+                            <div class="validChars">
+                                <div class="validChars--left">
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="minusculas"
+                                                name="minusculas" title="minusculas" checked>
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="minusculas">Minúsculas</label>
+                                    </div>
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="mayusculas"
+                                                name="mayusculas" title="mayusculas">
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="mayusculas">Mayúsculas</label>
+                                    </div>
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="sinSucesiones"
+                                                name="sinSucesiones" title="sinSucesiones">
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="sinSucesiones">Sin sucesión (ej. "123" / "abc")</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="specialChars"
-                                            name="specialChars" title="specialChars">
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="specialChars">Caracteres especiales (!/$*-.)</label>
-                                </div>
-                                <div>
-                                    <label class="onOff">
-                                        <input class="validChars--input" type="checkbox" id="noConsecutivos"
-                                            name="noConsecutivos" title="noConsecutivos">
-                                        <span class="switch"></span>
-                                    </label>
-                                    <label for="noConsecutivos">Sin repetir consecutivamente (ej. "11" / "aa")</label>
+                                <div class="validChars--right">
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="numeros" name="numeros"
+                                                title="numeros">
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="numeros">Números</label>
+
+                                    </div>
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="specialChars"
+                                                name="specialChars" title="specialChars">
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="specialChars">Caracteres especiales (!/$*-.)</label>
+                                    </div>
+                                    <div>
+                                        <label class="onOff">
+                                            <input class="validChars--input" type="checkbox" id="noConsecutivos"
+                                                name="noConsecutivos" title="noConsecutivos">
+                                            <span class="switch"></span>
+                                        </label>
+                                        <label for="noConsecutivos">Sin repetir consecutivamente (ej. "11" /
+                                            "aa")</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="buttons">
-                    <input class="button-generate" type="submit" id="generate" name="generate" value="Generar">
-                    <button id="copyButton" onclick="textCopy('generatedPass')" title="Copia las contraseñas generadas" type="button" disabled>Copiar</button>
-                </div>
-                </form>
-            </section>
+                        <div id="buttons">
+                            <input class="button-generate" type="submit" id="generate" name="generate" value="Generar">
+                            <button id="copyButton" onclick="textCopy('generatedPass')"
+                                title="Copia las contraseñas generadas" type="button" disabled>Copiar</button>
+                        </div>
+                    </form>
+                </section>
 
-            <section id="passResult">
-                <div id="error-message"></div>
-                <h3> Contraseña:</h3>
-                <div class="pass" id="cagePass">
-                    <p id="generatedPassId">N° 01</p>
-                    <p id="generatedPass"></p>
-                </div>
-            </section>
+                <section id="passResult">
+                    <div id="error-message"></div>
+                    <h3> Contraseña:</h3>
+                    <div class="pass" id="cagePass">
+                        <p id="generatedPassId">N° 01</p>
+                        <p id="generatedPass"></p>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
         <footer>
             <div class="creadoPor">
                 <p>Desarrollado por: Rosenrot3585 2024
