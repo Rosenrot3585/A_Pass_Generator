@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isNaN(cantPasswords) || cantPasswords <= 0 || cantPasswords > 30) {
             errorMessages.push("La cantidad de contraseñas debe ser un número entre 1 y 30.");
         }
+        if(!specialChars && !minusculas && !mayusculas && !numeros && !sinSucesiones && !noConsecutivos) {
+            errorMessages.push("Seleccione al menos un conjunto de caracteres para generar la contraseña.");
+        }
 
         if (errorMessages.length > 0) {
             // Mostrar mensajes de error
